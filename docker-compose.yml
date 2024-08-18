@@ -1,0 +1,11 @@
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: khadija
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: jwt_security
+    ports:
+      - 5437:5432
+    restart: unless-stopped
